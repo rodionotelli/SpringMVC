@@ -17,11 +17,11 @@ public class Main {
         final var connector = new Connector();
         connector.setPort(9999);
         tomcat.setConnector(connector);
+
         tomcat.getHost().setAppBase(".");
-        tomcat.addContext("",".");
+        tomcat.addWebapp("", ".");
 
         tomcat.start();
         tomcat.getServer().await();
-
     }
 }
