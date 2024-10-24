@@ -34,15 +34,15 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-core</artifactId>
-            <version>9.0.96</version>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.96</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
