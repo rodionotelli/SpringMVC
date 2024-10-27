@@ -5,6 +5,7 @@ import ru.netology.exception.NotFoundException;
 import ru.netology.model.Post;
 import ru.netology.repository.RepositoryInterface;
 
+import java.util.Collection;
 import java.util.List;
 
 @Service
@@ -15,7 +16,7 @@ public class PostService {
         this.repository = repository;
     }
 
-    public List<Post> all() {
+    public Collection<Post> all() {
         return repository.all();
     }
 

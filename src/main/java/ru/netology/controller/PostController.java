@@ -15,7 +15,7 @@ public class PostController {
     }
     @GetMapping
     public List<Post> all() {
-        return service.all();
+        return (List<Post>) service.all();
     }
 @GetMapping("/{id}")
     public Post getById(@PathVariable long id) {
